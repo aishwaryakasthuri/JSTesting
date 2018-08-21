@@ -1,0 +1,54 @@
+<html>
+        <head>
+                <link rel="stylesheet" type="text/css" href="expense.css" />
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            </head>
+<body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="expense.js"></script>
+
+      
+      <h1>Simple expense manager </h1>
+      <h2>Add a new item:</h2>
+      
+      <div id="form-box">
+      <form>
+        <div>
+          <span>Type:</span> 
+            <select name="type">
+                <option value="card">Card</option>
+                <option value="cash">Cash</option>
+                </select>
+        </div>
+        
+        <div>
+          <span>Name:</span> <input type="text" name="item-name" placeholder="What did you spend on?">
+        </div>
+        
+        <div>
+          <span>Date:</span> <input type="date" name="date">
+        </div>
+        
+        <div>
+          <span>Amount:</span> <input type="number" name="amount" placeholder="How much?">
+        </div>
+        
+      </form>
+      </div>
+      <div id="button-type">
+      <button >Add new expense</button>
+      </div>
+      <table>
+        <tr>
+          <th id="type" class="center">type</th>
+          <th>name</th>
+          <th id="date">date</th>
+          <th style="text-align: right" id="amount">amount</th>
+        </tr>
+        <tr id="if-empty">
+          <td colspan="4"><p>Your added items will show up here!</p></td>
+        </tr>
+      
+      </table>
+    </body>
+</html>      
